@@ -1,0 +1,200 @@
+# Vamos a crear una carpeta con el nombre "CSS" y vamos a crear un archivo con el nombre "estilo.css" y colocaremos lo siguiente, se ejecuta de manera local.
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.flex-content{
+     
+     /*propiedad para hacer la caga flexible*/
+     display: flex;
+    flex-direction: column;
+    background: orange;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.items{
+    width: 30px ;
+    height: 30px;
+    margin: 3px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid white;
+    background: lightblue ;
+    /*flex-grow: 1;*/
+
+}
+.items:nth-child(3){
+    align-self: flex-end;
+}
+
+.items:nth-child(1){ 
+    order:1;
+    align-self: center;
+}
+.items:nth-child(2){
+    order: 2;
+    align-self:flex-start;
+}
+
+.items:nth-child(3){
+order: 3;
+align-self: flex-end;
+}
+
+.items:nth-child(4){
+order: 4;
+align-self: center;
+}
+
+.items:nth-child(5){
+order: 5;
+align-self: flex-start;
+}
+
+.items:nth-child(6){
+order: 6;
+align-self: center;
+}
+.items:nth-child(7){
+    order: 7;
+    align-self: flex-end;
+}
+.items:nth-child(8){
+    order: 8;
+    align-self: flex-start;
+}
+
+@media screen and (min-width : 576px){
+    .flex-content{
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: orange;
+    }
+    .items:nth-child(1){
+        order: 1;
+        align-self: center;
+    }
+    .items:nth-child(2){
+        order: 3;
+        align-self: flex-start;
+    }
+    
+    .items:nth-child(3){
+    order: 5;
+    align-self: flex-start;
+    }
+    
+    .items:nth-child(4){
+    order: 7;
+    align-self: flex-start;
+    }
+    
+    .items:nth-child(5){
+    order: 8;
+    align-self: center;
+    }
+    
+    .items:nth-child(6){
+    order: 6;
+    align-self: flex-end;
+    }
+    .items:nth-child(7){
+    order: 4;
+    align-self: flex-end;
+    }
+    .items:nth-child(8){
+    order: 2;
+    align-self: flex-end;
+    }
+   
+}
+
+   
+@media screen and (min-width : 768px){
+    .center-class{
+        padding-top: 212px;
+    }
+    .flex-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: orange;
+    }
+    .items:nth-child(1){ /*hover :cuando pasas un puntero se activa el hover*/
+        flex-grow: 1;
+        order:1;   
+
+    }
+    .items:nth-child(2){
+        flex-grow: 1;
+        order: 2;
+    }
+    
+    .items:nth-child(3){
+        flex-grow: 1;
+    order: 3;
+    }
+    
+    .items:nth-child(4){
+        flex-grow: 1;
+    order: 4;
+    }
+    
+    .items:nth-child(5){
+        flex-grow: 1;
+    order: 5;
+    }
+    
+    .items:nth-child(6){
+        flex-grow: 1;
+    order: 6;
+    }
+    .items:nth-child(7){
+        flex-grow: 1;
+    order: 7;
+    }
+    .items:nth-child(8){
+        flex-grow: 1;
+        order: 8;
+    }
+}
+
+@media screen and (min-width : 992px){
+    .center-class{
+        padding-top: 212px;
+    }
+    .items:nth-child(1){
+        order:1;
+        flex-grow: 3;
+    }
+    .items:nth-child(2){
+        order: 2;
+    }
+    
+    .items:nth-child(3){
+    order: 3;
+    }
+    
+    .items:nth-child(4){
+    order: 4;
+    }
+    
+    .items:nth-child(5){
+    order: 5;
+    flex-grow: 3;
+    }
+    
+    .items:nth-child(6){
+    order: 6;
+    
+    }
+    .items:nth-child(7){
+    order: 7;
+    }
+    .items:nth-child(8){
+    order: 8;
+    flex-grow: 3;
+    }
+}
